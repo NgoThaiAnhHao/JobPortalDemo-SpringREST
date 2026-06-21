@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/register"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "confirmPassword": "strin",
+      "email": "string",
+      "password": "string",
+      "provider": "GOOGLE",
+      "userTypeRole": "JOB_SEEKER"
+    }
+examples: ./.resources/register.resources/examples
+order: 1000

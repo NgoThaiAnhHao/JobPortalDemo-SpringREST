@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/logout?refreshToken=string"
+method: POST
+queryParams:
+  refreshToken: string
+examples: ./.resources/logout.resources/examples
+order: 1000

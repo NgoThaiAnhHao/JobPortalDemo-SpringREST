@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/refresh-token?refreshToken=string"
+method: GET
+headers:
+  Accept: "*/*"
+queryParams:
+  refreshToken: string
+examples: ./.resources/refresh Token.resources/examples
+order: 1000

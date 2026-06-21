@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/verify-otp?token=string"
+method: POST
+queryParams:
+  token: string
+examples: ./.resources/verify Token.resources/examples
+order: 1000

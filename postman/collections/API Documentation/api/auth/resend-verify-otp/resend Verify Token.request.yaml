@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/resend-verify-otp?email=string"
+method: POST
+queryParams:
+  email: string
+examples: ./.resources/resend Verify Token.resources/examples
+order: 1000

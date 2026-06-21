@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/test-ting?email=string"
+method: POST
+queryParams:
+  email: string
+examples: ./.resources/test.resources/examples
+order: 1000

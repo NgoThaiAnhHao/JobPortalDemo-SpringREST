@@ -1,0 +1,49 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/users"
+  method: GET
+  headers:
+    - key: Accept
+      value: "*/*"
+    - key: Authorization
+      value: Bearer <token>
+      description: "Added as a part of security scheme: bearer"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "userId": 5398,
+          "email": "string",
+          "password": "string",
+          "provider": "LOCAL",
+          "providerId": "string",
+          "enabled": true,
+          "createdAt": "2010-02-04T23:56:51.245Z",
+          "updatedAt": "1989-07-14T00:55:26.570Z",
+          "userType": {
+            "userTypeId": 3581,
+            "userTypeRole": "RECRUITER"
+          }
+        },
+        {
+          "userId": 5733,
+          "email": "string",
+          "password": "string",
+          "provider": "GOOGLE",
+          "providerId": "string",
+          "enabled": true,
+          "createdAt": "1963-02-07T12:10:58.080Z",
+          "updatedAt": "2019-10-20T21:14:43.004Z",
+          "userType": {
+            "userTypeId": 5971,
+            "userTypeRole": "JOB_SEEKER"
+          }
+        }
+      ]
+order: 1000
