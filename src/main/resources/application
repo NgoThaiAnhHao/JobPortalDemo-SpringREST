@@ -9,3 +9,18 @@ spring.datasource.password=12345
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.open-in-view=false
 
+#
+# CONFIG FOR JWT
+#
+spring.jwt.secret={secret}
+spring.jwt.expiration={expiration}
+
+#
+# CONFIG MAIL SENDER
+#
+spring.mail.host={host}
+spring.mail.port=587
+spring.mail.username={username}
+spring.mail.password={password}
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
